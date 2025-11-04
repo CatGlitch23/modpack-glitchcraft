@@ -1,0 +1,10 @@
+{
+  "firstPersonDefaultZoom": 4.0,
+  "thirdPersonDefaultZoom": 2.0,
+  "minZoomFactor": 1.0,
+  "maxZoomFactor": 10.0,
+  "zoomStep": 0.25,
+  "smoothZoomSpeed": 0.2,
+  "animationDurationMs": 200,
+  "enableZoomSounds": true
+}
