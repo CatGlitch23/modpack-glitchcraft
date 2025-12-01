@@ -1,13 +1,12 @@
-StartupEvents.registry('item', event => {  
-    event.create('kubejs:custom_sword', 'sword')  
-        .texture('custom_sword_texture')  
-        .attackDamage(10.0)  
-        .attackSpeed(-2.0)  
-        .tooltip('Esta espada es solo para moderadores')  
-        .glow(true)  
-        .tier(tier => {  
-            tier.setAttackDamageBonus(7.0)  
-            tier.setUses(1500)  
-            tier.setSpeed(8.0)  
-        })  
+StartupEvents.registry("item", event => {
+  event
+    .create("mod_sword").swords(swords => {
+      swords
+      .damage(10)
+      .attackSpeed(1.6)
+      .glow(true)
+      .displayName("Espada de Mods")
+      .tooltip("Esta espada solo puede ser usada por un moderador.")
+      .maxStackSize(1)
+    })
 })
