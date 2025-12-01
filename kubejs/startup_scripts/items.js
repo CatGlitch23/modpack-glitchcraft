@@ -1,12 +1,3 @@
-StartupEvents.registry("item", event => {
-  event
-    .create("mod_sword").swords(swords => {
-      swords
-      .damage(10)
-      .attackSpeed(1.6)
-      .glow(true)
-      .displayName("Espada de Mods")
-      .tooltip("Esta espada solo puede ser usada por un moderador.")
-      .maxStackSize(1)
-    })
-})
+StartupEvents.registry('item', e => {
+    e.create('sword_mod_custom').tier('diamond').attackDamageBaseline(10.0)
+        })
