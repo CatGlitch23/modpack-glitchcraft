@@ -1,3 +1,3 @@
-StartupEvents.registry('item', e => {
-    e.create('sword_mod_custom').tier('diamond').attackDamageBaseline(10.0)
+StartupEvents.registry('item', event => {
+    event.create('sword_mod_custom', 'sword').attackDamageBaseline(10).speedBaseline(1.6)
         })
